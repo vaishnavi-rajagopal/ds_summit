@@ -96,7 +96,7 @@ class GA:
         output = lst_pop['value'].head(1).to_string(index=False).strip()
         op =''
         for i in range(0,len(output)):
-            op = op + output[i]
+            op = op + str(int(output[i])-1)
             if i != len(output)-1:
                 op = op +' '
         print(op)
