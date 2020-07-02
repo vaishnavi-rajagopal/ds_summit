@@ -94,7 +94,12 @@ class GA:
           inp_popln = GA.Mutation(random.sample(co_popln,int(k)))
 
         output = lst_pop['value'].head(1).to_string(index=False).strip()
-        print(output)
+        op =''
+        for i in range(0,len(output)):
+            op = op + output[i]
+            if i != len(output)-1:
+                op = op +' '
+        print(op)
 
 # Call Main function in the GA class
 queens8 = GA('57142863',150,0.75,0.2)
